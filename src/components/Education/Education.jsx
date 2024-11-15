@@ -17,7 +17,7 @@ export default function Education() {
       name: "SRM University AP",
       year: "2018-2022",
       title: "B-TECH",
-      CGPA: "CGPA : 7.65",
+      CGPA: "CGPA : 7.90",
       course: "course : CSE",
       icon: "assets/Logo-2.png",
       featured: true,
