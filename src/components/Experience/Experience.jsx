@@ -3,14 +3,23 @@ import "./Experience.scss";
 
 export default function Experience() {
   const currentYear = new Date().getFullYear();
+
   const data = [
     {
       id: 1,
-      name: "ZF Groups, Hyderabad ",
+      name: "ZF Group, Hyderabad",
       year: `2022 - ${currentYear}`,
-      title: "Role : SIL Engineer",
-      role: "I work as an ADAS SIL Integrator, focusing on integrating, testing, and validating software systems designed for advanced driver-assistance systems (ADAS). My role involves creating a virtual testing environment where I simulate real-world driving scenarios to validate the functionality, performance, and safety of ADAS software.",
-      tools: "Tools Used : SIL System Integration, C++ , Python , QT , Docker, Linux",
+      title: "Role: SIL Engineer",
+      role: [
+        "Worked as a Tools Developer using C, C++ and Python for automotive applications",
+        "Developed and maintained automation tools in the automotive domain",
+        "Built ARXML Generator Tool for ECU configuration and data exchange formats",
+        "Developed SIL (Software-in-the-Loop) tools for ADAS software integration and validation",
+        "Worked on SDF Converter Tool for data format conversion in testing workflows",
+        "Used tools and environments such as VS Code, Qt, Linux, Rhapsody, and DaVinci Developer",
+        "Involved in debugging, enhancement, and optimization of automotive software tools"
+      ],
+      tools: "Tools Used: SIL System Integration, C++, Python, Qt, Docker, Linux",
       icon: "assets/ZF.svg.png",
       featured: true,
     },
@@ -19,21 +28,30 @@ export default function Experience() {
   return (
     <div className="Experience" id="Experience">
       <h1>Experience</h1>
+
       <div className="container">
         {data.map((d) => (
           <div key={d.id} className={d.featured ? "card featured" : "card"}>
+            
             <div className="top">
               <img className="icon" src={d.icon} alt={`${d.name} logo`} />
             </div>
+
             <div className="content">
               <h3 className="name">{d.name}</h3>
               <h3 className="title">{d.title}</h3>
               <h3 className="year">{d.year}</h3>
-              <h4 className="role">{d.role}</h4>
-              {/* Extra Line Break after Role */}
-              <br />
+
+              {/* Role Points */}
+              <ul className="role">
+                {d.role.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+
               <h4 className="tools">{d.tools}</h4>
             </div>
+
           </div>
         ))}
       </div>

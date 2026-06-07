@@ -7,7 +7,7 @@ export default function Works() {
     {
       id: "1",
       icon: "./assets/mobile.png",
-      title: "RESTAURENT WEBSITE",
+      title: "SIL Developer",
       desc:
         "This is a frontend and backend website which I built in my 4th semester using HTML, CSS, php, MySQL and JavaScript this is a website for book a table and order the food. ",
        
@@ -15,7 +15,7 @@ export default function Works() {
     {
       id: "2",
       icon: "./assets/globe.png",
-      title: "Doctor consultant website with video call",
+      title: "ARXML Generator",
       desc:
         "This is a frontend and backend website which I built in my 6th semester using HTML, CSS and JavaScript this is a website for consult a doctor.",
        
@@ -23,7 +23,7 @@ export default function Works() {
     {
       id: "3",
       icon: "./assets/writing.png",
-      title: "Temperature & Humidity Monitor",
+      title: "WIKI Pipeline",
       desc:
         "This is a frontend and backend website which I built in my 6th semester using HTML, CSS and JavaScript this is a website for consult a doctor.",
        
